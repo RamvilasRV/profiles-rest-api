@@ -7,6 +7,7 @@ router = DefaultRouter()
 # router.register(name_of_the_url_that_we_wish_to_create, viewset_that_we_wish_to_register)
 router.register('hello-viewset', views.HelloViewSet, basename="hello-viewset")
 router.register('profile', views.UserProfileViewSet)
+router.register('feed', views.UserProfileFeedViewSet)
  
 urlpatterns = [
 	path("hello-view/", views.HelloApiView.as_view()),
